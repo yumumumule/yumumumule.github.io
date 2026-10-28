@@ -8,9 +8,11 @@ The official [CUHK profile for Prof. Hongliang Ren](https://research.cuhk.edu.hk
 
 ## Research boundaries
 
-- AgentVLA topic and experimental design/execution/model training are supplied by the owner; the public biography also mentions experimental design, evaluation, and training. No system architecture, results, timeline, or publication authorship is inferred.
+- The owner identified the AgentVLA lab work with [EndoRSI](https://arxiv.org/abs/2610.13376). Its official title, 2026 preprint status, author list, and Hanlin Zhao's co-authorship were verified on arXiv. The site uses the official paper title, retaining AgentVLA as the owner-supplied lab-project association. Personal experimental design/execution/model-training responsibilities remain owner-supplied; paper-level results and system implementation are not represented as individual achievements.
 - EndoNav and EndoRinse are displayed only as lab research topics, using the supplied descriptions. No task-specific personal implementation is claimed.
-- OOV is omitted: “lesion identification” alone is insufficient to write a useful, reliable public entry.
+- [EndoVLA-OOV](https://arxiv.org/abs/2610.24747) is now included using its arXiv title, author order, year, and abstract. Hanlin Zhao is listed as a co-author. The owner confirmed that only this work is under review at “IEEE TRL”; the abbreviation is retained verbatim, without an inferred journal expansion or claim of acceptance. The review status is owner-reported, not verified on a journal submission portal.
+- The owner supplied the title and author list of [EICARL](https://openreview.net/forum?id=WQSL6LbIMo) and confirmed acceptance at a CoRL workshop. OpenReview web pages, public APIs, and PDF endpoints require human verification from this environment, so the workshop metadata and acceptance could not be independently checked. The specific workshop name, year, and presentation format were not supplied and are omitted. The other linked workshop submission is excluded at the owner's request following rejection.
+- The [OpenReview profile](https://openreview.net/profile?id=~Hanlin_ZHAO2) is linked using the exact owner-provided identifier; blocked access is not described as successful verification.
 - No unpublished artifacts or private lab files were read or uploaded.
 - CASMI26 is described as participation only. The preliminary “around top 50%” position is not published as an achievement or final result.
 
@@ -20,7 +22,7 @@ LinkedIn returns HTTP 999 to automated access; its content could not be verified
 
 The public biography includes a CUHK email that appears to embed a student identifier. It was excluded to honor the owner's privacy requirement. The owner subsequently supplied `zhl2104405665@gmail.com` for publication; it is linked in the hero and contact section alongside GitHub and LinkedIn. This address was supplied directly by the owner; mailbox delivery has not been tested.
 
-No PDF CV was found during initial setup. The owner subsequently supplied a Word CV for publication. A public PDF was prepared with the approved Gmail address and GitHub profile in place of the source's phone numbers and student-number-based email. Other CV content was preserved as owner-supplied information; additional leadership roles and honors in the CV have not been independently verified. PDF metadata was limited to a public title and author. Only the PDF is published; the original Word document is unchanged and remains outside this repository. See README for replacement steps.
+The owner supplied a Word CV and later requested a content and design update. The revised public CV prioritizes education, research, the three selected papers/preprints, and two verified engineering projects. Selected honors and activities were condensed from the owner-supplied original; the low-priority Green Walker entry is omitted. Technical skills reflect the inspected public code, without proficiency ratings. Contact details use the approved Gmail, website, GitHub, and OpenReview links, with no phone numbers or student-number email. Additional leadership roles and honors remain owner-supplied. The original Word document is preserved. Public PDF metadata is limited to a title and author. An optional generated Word intermediate is not published or delivered as a visually verified artifact; the delivered, visually inspected CV is the PDF. Curated content lives in `content/cv.json`; see README for regeneration and replacement steps.
 
 ## Review when updating
 

@@ -1,0 +1,73 @@
+{
+  "name": "Hanlin Zhao",
+  "updated": "October 2026",
+  "email": "zhl2104405665@gmail.com",
+  "website": "https://yumumumule.github.io/",
+  "github": "https://github.com/yumumumule",
+  "openreview": "https://openreview.net/profile?id=~Hanlin_ZHAO2",
+  "interests": "Machine learning | Computer vision | Embodied AI | Vision-language-action models",
+  "education": {
+    "institution": "The Chinese University of Hong Kong",
+    "degree": "BEng in Artificial Intelligence: Systems & Technologies",
+    "period": "2025 - 2029 (expected)",
+    "record": "CGPA: 3.883/4.000 | Dean's List 2025/26",
+    "coursework": "Recommender Systems (STAT3009); Regression Analysis (STAT3008)"
+  },
+  "research": {
+    "lab": "AI Robotic Perception Lab, CUHK",
+    "period": "Aug 2026 - Present",
+    "role": "Undergraduate Researcher | Supervisor: Prof. Hongliang Ren",
+    "details": [
+      "Support experimental design, run experiments, and train models for self-evolving AI research.",
+      "Research topics include self-evolving robot policies, endoscopic navigation, and robotic irrigation."
+    ]
+  },
+  "papers": [
+    {
+      "title": "EndoRSI: Physical-Evidence-Driven Recursive Improvement of Endoscopic Robot Policies",
+      "authors": "C. K. Ng, Y. Zhang, T. Wu, S. H. Lui, Hanlin Zhao, et al.",
+      "status": "arXiv:2610.13376, 2026 | Preprint",
+      "url": "https://arxiv.org/abs/2610.13376",
+      "provenance": "Title, author order and year verified on arXiv. Owner identifies this with AgentVLA lab work."
+    },
+    {
+      "title": "EndoVLA-OOV: Language-Conditioned Out-of-View Target Acquisition in Robotic Endoscopy",
+      "authors": "C. K. Ng, Y. Zhang, T. Wu, Z. Tang, Hanlin Zhao, et al.",
+      "status": "arXiv:2610.24747, 2026 | Under review at IEEE TRL",
+      "url": "https://arxiv.org/abs/2610.24747",
+      "provenance": "Title, author order and year verified on arXiv. IEEE TRL abbreviation and under-review status supplied by owner; not expanded or presented as acceptance."
+    },
+    {
+      "title": "EICARL: Traversability-Aware Decision Making Through Bounded Attempts in Narrow-Lumen Navigation",
+      "authors": "C. K. Ng, T. Wu, L. Bai, Hanlin Zhao, et al.",
+      "status": "CoRL workshop | Accepted",
+      "url": "https://openreview.net/forum?id=WQSL6LbIMo",
+      "provenance": "Title, author list and acceptance supplied by owner from OpenReview. Automated access blocked. Specific workshop name and year not supplied; omitted."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Movie Recommendation System",
+      "tech": "Python, NumPy, pandas",
+      "url": "https://github.com/yumumumule/movie-recommendation-system",
+      "description": "Implemented biased matrix factorization and rating baselines with validation-based model selection, cold-start fallbacks, saved artifacts, and a recommendation CLI."
+    },
+    {
+      "name": "Background Sensitivity in CLIP",
+      "tech": "Python, PyTorch, OpenCLIP",
+      "url": "https://github.com/yumumumule/clip-background-bias",
+      "description": "AIST1000 seminar project evaluating frozen CLIP on 370 images with paired background interventions and bootstrap intervals; a cropping robustness benefit remains unresolved."
+    }
+  ],
+  "honors": [
+    "Lee Quo Wei CUHK Golden Jubilee Scholarship; CUHK Entrance Scholarship",
+    "ELITE Stream Scholarship 2025/26; Honours at Entrance",
+    "Top 8, World Chinese Debate Invitational Tournament"
+  ],
+  "activities": [
+    {"role": "Shaw College Student Ambassador", "period": "Sep 2026"},
+    {"role": "ICP Mentor", "period": "Sep 2026 - Present"},
+    {"role": "Chinese Debate Team Member", "period": "Sep 2025 - Present"}
+  ],
+  "skills": "Python, C, R | NumPy, pandas, PyTorch, Git, CMake"
+}

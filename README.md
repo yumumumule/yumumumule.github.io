@@ -34,18 +34,20 @@ npm run build
 
 1. Edit the corresponding section in `index.html`; headings and anchor IDs identify each section.
 2. For projects, update the manually curated `.project-card` entries. Link to code and recorded results; retain dataset, split, and uncertainty limitations. Do not copy unverified headline metrics.
-3. For research, edit `#research`. Separate team research topics from personal responsibilities. Add publications or project links only after authorship, public status, and permission are established.
+3. For research, edit `#research`. Separate team research topics from personal responsibilities. Keep preprints, journal submissions under review, and accepted workshop papers distinct. Use official paper titles and published author order. Review `docs/content-notes.md` for provenance and access limits. The IEEE TRL status applies only to EndoVLA-OOV; EICARL is listed as an accepted CoRL workshop paper, without an inferred year or specific workshop name.
 4. Edit `assets/style.css` for visual changes and `assets/main.js` for progressive enhancement. Keep essential content in HTML.
 5. Review changed content in the browser, run the checks above, commit, and push `main`.
 
 ## Add or replace the CV
 
-The website links to a public PDF converted from the owner's supplied Word CV. The public copy uses the approved Gmail address and omits phone numbers and the student-number-based email; the original Word document is preserved outside this repository. To replace the public CV:
+The website links to a redesigned, one-page public CV incorporating the owner's Word CV, verified public projects, arXiv co-authorship, and owner-confirmed workshop/review information. The public copy uses the approved Gmail address and omits phone numbers and the student-number-based email; the original Word document is preserved outside this repository. To replace the public CV:
 
 1. Review its currency and remove phone numbers, student IDs, private addresses, and confidential research details. Check PDF metadata too.
 2. Save it as `assets/Hanlin_Zhao_CV.pdf`.
 3. Keep the existing download link in `#cv` and update the adjacent description if the contents change.
 4. Keep the filename for future replacements, check the download, then commit and push.
+
+Curated CV content is in `content/cv.json`. With Python, `python-docx`, `pypdf`, and `reportlab` available, run `python scripts/generate-cv.py --docx-out artifacts/cv-refresh/Hanlin_Zhao_CV_Updated.docx`, then `python scripts/generate-cv.py --render-pdf` to regenerate the public PDF. The PDF layout uses locally installed Windows Calibri and Georgia fonts. The script validates its one-page output, text, paper hyperlinks, metadata, and contact privacy. Render and inspect the PDF before pushing. The generated Word file is an optional editable intermediate and must be rendered separately before sharing; its pagination is not assumed to match the PDF. If exporting Word with a supported renderer, validate it with `python scripts/generate-cv.py --pdf-in <exported.pdf> --docx-source artifacts/cv-refresh/Hanlin_Zhao_CV_Updated.docx`. Regenerating a CV is separate from the buildless website workflow.
 
 The owner-provided contact email is `zhl2104405665@gmail.com`, linked from the hero and contact section alongside GitHub and LinkedIn. To change it, update both `mailto:` destinations and the visible address in `index.html`.
 
