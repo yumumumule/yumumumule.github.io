@@ -11,10 +11,14 @@ Implemented and checked on Windows with Node.js 24.14.1 and installed Google Chr
 - `npm run check`: passed HTML Validate recommended rules, unique IDs, all local referenced files, internal fragments, required metadata, and checks against publishing student-number emails, phone links, tokens, or tracking.
 - `npm run build`: passed; `dist/` contains only the public-file allowlist. No runtime dependency download is needed to use the page.
 - All 11 unique GitHub destination URLs returned HTTP 200. LinkedIn returned HTTP 999 and is classified as automation-blocked, not independently verified. The initial CUHK department link timed out; it was replaced with an official CUHK research profile that returned HTTP 200.
-- The canonical website initially returned 404 because the new Pages repository had not yet been created. Publication verification must check this URL again.
+- After publication, the canonical website and the official CUHK profile returned HTTP 200. All checked destinations passed except LinkedIn, which continued to block automated access with HTTP 999.
 
 Screenshots and machine-readable test results are in the ignored local `artifacts/` folder. Browser automation does not replace a full manual screen-reader audit. Upstream repository experiments were inspected rather than rerun; metrics on the page are explicitly recorded upstream results.
 
 ## Publication
 
-Target: `https://github.com/yumumumule/yumumumule.github.io`, GitHub Pages from `main` at `/`. Deployment and live verification are recorded after the initial validated source commit. See repository commit history and GitHub's Pages build status for the exact published revision.
+Successfully published at <https://yumumumule.github.io/> from <https://github.com/yumumumule/yumumumule.github.io>, using `main` at `/`. GitHub's API reported Pages and its latest build as `built` for source revision `49f2827c03821b4cff9891a22121a806b719fab0`, with no build error.
+
+Live Chrome checks passed at desktop (1440×1000) and mobile (390×844): HTTP 200, four project cards, no horizontal overflow, zero axe-core violations for the same WCAG/best-practice tags, and no page or same-origin asset errors. The published HTML matched the local `index.html` byte for byte. Stylesheet and Open Graph image URLs also returned HTTP 200. Machine-readable live check results and screenshots are retained locally in `artifacts/`.
+
+The final documentation-only commit records these results; it does not change the tested page or assets. Subsequent updates can be inspected with `node scripts/deploy.mjs --status` and the live URL.

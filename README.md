@@ -73,4 +73,4 @@ git commit -m "Update portfolio content"
 git push origin main
 ```
 
-Wait for the Pages build to finish and inspect the live URL. Browser QA, audit clones, dependencies, and experimental data are not published. Only public project evidence and owner-supplied biographical details appear on the website.
+Wait for the Pages build to finish and inspect the live URL. Browser QA artifacts, audit clones, installed dependencies, and experimental data are not published. Only public project evidence and owner-supplied biographical details appear on the website.
