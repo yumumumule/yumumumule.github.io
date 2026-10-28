@@ -47,7 +47,7 @@ No current PDF was found during setup, so the website shows an explicitly unavai
 3. Replace the disabled button in `#cv` with `<a class="cv-button" href="assets/Hanlin_Zhao_CV.pdf" download>Download CV (PDF)</a>` and update the adjacent status text.
 4. Keep the filename for future replacements, check the download, then commit and push.
 
-An alternative professional email is pending. Until supplied, contact uses GitHub and LinkedIn. Add a verified `mailto:` link to the hero and contact section when approved.
+The owner-provided contact email is `zhl2104405665@gmail.com`, linked from the hero and contact section alongside GitHub and LinkedIn. To change it, update both `mailto:` destinations and the visible address in `index.html`.
 
 ## GitHub Pages deployment
 

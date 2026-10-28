@@ -18,10 +18,10 @@ The official [CUHK profile for Prof. Hongliang Ren](https://research.cuhk.edu.hk
 
 LinkedIn returns HTTP 999 to automated access; its content could not be verified. The exact owner-provided URL is retained.
 
-The public biography includes a CUHK email that appears to embed a student identifier. It was excluded to honor the owner's privacy requirement. The owner elected to provide a different email; no alternative address had been supplied at implementation. GitHub and LinkedIn remain the contact routes.
+The public biography includes a CUHK email that appears to embed a student identifier. It was excluded to honor the owner's privacy requirement. The owner subsequently supplied `zhl2104405665@gmail.com` for publication; it is linked in the hero and contact section alongside GitHub and LinkedIn. This address was supplied directly by the owner; mailbox delivery has not been tested.
 
 No current PDF CV was found in the workspace or filename searches across the CUHK/iCloudDrive, Documents, Downloads, and Desktop folders (including CV/resume and Chinese résumé names). The site explicitly marks the download unavailable. It does not fabricate a CV or publish an old document. See README for replacement steps.
 
 ## Review when updating
 
-Confirm academic honors/CGPA currency; confirm the lab's preferred public naming and permission to list research topics; review collaborator attribution; provide a current reviewed CV and optional professional email. These are content maintenance items, not claims of independent verification.
+Confirm academic honors/CGPA currency; confirm the lab's preferred public naming and permission to list research topics; review collaborator attribution; provide a current reviewed CV. These are content maintenance items, not claims of independent verification.
