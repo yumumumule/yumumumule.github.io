@@ -61,13 +61,25 @@
   ],
   "honors": [
     "Lee Quo Wei CUHK Golden Jubilee Scholarship; CUHK Entrance Scholarship",
-    "ELITE Stream Scholarship 2025/26; Honours at Entrance",
-    "Top 8, World Chinese Debate Invitational Tournament"
+    "ELITE Stream Scholarship 2025/26; Honours at Entrance"
   ],
   "activities": [
-    {"role": "Shaw College Student Ambassador", "period": "Sep 2026"},
-    {"role": "ICP Mentor", "period": "Sep 2026 - Present"},
-    {"role": "Chinese Debate Team Member", "period": "Sep 2025 - Present"}
+    {
+      "role": "ICP Mentor",
+      "period": "Sep 2026 - Present",
+      "description": "Provide peer mentoring and transition guidance, helping fellow students navigate university life and connect with the campus community through approachable support and clear communication."
+    },
+    {
+      "role": "Shaw College Student Ambassador",
+      "period": "Sep 2026",
+      "description": "Represent Shaw College in student-facing activities, outreach, and community engagement; support communication between the College and its student community."
+    },
+    {
+      "role": "Chinese Debate Team Member",
+      "period": "Sep 2025 - Present",
+      "description": "Research evidence, develop debate cases, and contribute to team training; present arguments in competition and collaborate on case preparation.",
+      "achievement": "Quarterfinalist (Top 8), World Chinese Debate Invitational Tournament."
+    }
   ],
   "skills": "Python, C, R | NumPy, pandas, PyTorch, Git, CMake"
 }

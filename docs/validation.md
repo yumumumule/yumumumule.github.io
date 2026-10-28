@@ -40,3 +40,9 @@ Added three research entries and OpenReview links. Reorganized the CV as a one-p
 Passed PDF text coverage against the generated content source, paper hyperlink preservation, one-page count, restricted metadata, and contact privacy checks. Repeated the four-width browser/accessibility suite with zero detected violations, overflow, or page/asset errors. HTML validation, static build, JavaScript-disabled content, keyboard navigation, reduced motion, and 200% zoom passed. Additional desktop/mobile checks confirmed three paper entries and matching downloaded PDF bytes/filename. Screenshots and source-access evidence remain in ignored `artifacts/`.
 
 Published research update `07d360b` returned HTTP 200, with matching live HTML, CSS, and PDF bytes. Live desktop/mobile accessibility scans detected zero violations, and both downloaded the matching PDF. Visual review identified an existing navigation-highlight mismatch at section boundaries; the follow-up fix uses the configured scroll offset and checks the active navigation link at all six anchors across the four viewport widths.
+
+## Expanded activities on 29 October 2026
+
+Expanded ICP Mentor, Shaw College Student Ambassador, and Chinese Debate Team Member into dated entries with source-grounded responsibilities. Moved the World Chinese Debate Invitational Tournament quarterfinal result into the Debate Team entry; it appears once and is absent from Selected Honors. Adjusted section spacing while retaining body font sizes and all research/project content.
+
+The updated A4 PDF remains one page. Text coverage, links, metadata, privacy, and page bounds passed. Full-page PNG inspection found no overlap or clipping. The first text starts 46.8pt from the top; the last text ends 41.6pt above the bottom, providing balanced margins. HTML checks and the static build passed; this update changes the CV asset and its generation source without altering the webpage layout.

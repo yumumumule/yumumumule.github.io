@@ -115,15 +115,14 @@ def generate_docx(destination):
         paragraph.add_run(' | '+project['tech']).font.size=Pt(9.3)
         p(project['description'],size=10,after=4)
 
-    doc.add_heading('Selected Honors and Activities',1)
+    doc.add_heading('Leadership and Service',1)
+    for activity in DATA['activities']:
+        row(activity['role'],activity['period'])
+        p(activity['description'],size=10,after=3)
+        if activity.get('achievement'): p(activity['achievement'],size=9.5,after=3)
+
+    doc.add_heading('Selected Honors',1)
     for honor in DATA['honors']: p(honor,size=10,after=1)
-    activities=p(after=1)
-    for index,activity in enumerate(DATA['activities']):
-        if index: activities.add_run(' | ')
-        label=activity['role']
-        if label=='Shaw College Student Ambassador': label='Shaw College Ambassador'
-        if label=='Chinese Debate Team Member': label='Chinese Debate Team'
-        run=activities.add_run(label);run.font.size=Pt(9.5)
 
     doc.add_heading('Technical Skills',1)
     p(DATA['skills'],size=10,after=0)
@@ -184,8 +183,9 @@ def render_pdf(destination):
     styles={
         'title':ParagraphStyle('title',fontName='CV-Title',fontSize=29,leading=33,spaceAfter=5,textColor='#000000'),
         'header':ParagraphStyle('header',fontName='CV',fontSize=10,leading=12.8,spaceAfter=3,textColor='#000000'),
-        'heading':ParagraphStyle('heading',fontName='CV-Bold',fontSize=11.5,leading=14,spaceBefore=10,spaceAfter=4,keepWithNext=True,textColor='#000000'),
+        'heading':ParagraphStyle('heading',fontName='CV-Bold',fontSize=11.5,leading=14,spaceBefore=8,spaceAfter=3,keepWithNext=True,textColor='#000000'),
         'body':ParagraphStyle('body',fontName='CV',fontSize=11,leading=13.3,spaceAfter=2,textColor='#000000'),
+        'activity':ParagraphStyle('activity',fontName='CV',fontSize=10.3,leading=12.4,spaceAfter=3,textColor='#000000'),
         'small':ParagraphStyle('small',fontName='CV',fontSize=9.5,leading=11.8,spaceAfter=1,textColor='#000000'),
         'paper':ParagraphStyle('paper',fontName='CV-Bold',fontSize=11,leading=13.2,spaceAfter=1,keepWithNext=True,textColor='#000000')
     }
@@ -224,9 +224,13 @@ def render_pdf(destination):
     for project in DATA['projects']:
         para(link(project['name'],project['url'])+' <font name="CV" size="9.3">| '+escape(project['tech'])+'</font>','paper',True)
         para(project['description'],'body',after=4)
-    para('Selected Honors and Activities','heading')
+    para('Leadership and Service','heading')
+    for activity in DATA['activities']:
+        story.append(Row(activity['role'],activity['period']))
+        para(activity['description'],'activity')
+        if activity.get('achievement'):para(activity['achievement'],'small',after=3)
+    para('Selected Honors','heading')
     for honor in DATA['honors']:para(honor,'body',after=1)
-    para('Shaw College Ambassador | ICP Mentor | Chinese Debate Team','small',after=1)
     para('Technical Skills','heading');para(DATA['skills'],'body',after=0)
     raw=ROOT/'artifacts/cv-refresh/Hanlin_Zhao_CV_Layout.pdf'
     raw.parent.mkdir(parents=True,exist_ok=True)

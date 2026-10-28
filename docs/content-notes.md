@@ -26,4 +26,6 @@ The owner supplied a Word CV and later requested a content and design update. Th
 
 ## Review when updating
 
+The owner requested fuller descriptions of ICP mentoring, Shaw College ambassador service, and debate participation. These are now separate dated entries under Leadership and Service, grounded in the original CV's peer guidance, College outreach/community communication, evidence research, case preparation, and team training. No team size, leadership title, event ownership, or quantitative impact was inferred. The debate quarterfinal result appears only within the Debate Team entry and has been removed from Selected Honors.
+
 Confirm academic honors/CGPA currency; confirm the lab's preferred public naming and permission to list research topics; review collaborator attribution; keep the supplied CV current. These are content maintenance items, not claims of independent verification.
