@@ -1,0 +1,20 @@
+{
+  "name": "hanlin-zhao-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Buildless academic and engineering portfolio for Hanlin Zhao",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/browser-check.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "deploy": "node scripts/deploy.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.1",
+    "html-validate": "10.7.0",
+    "playwright-core": "1.56.1"
+  },
+  "engines": { "node": ">=22" }
+}
