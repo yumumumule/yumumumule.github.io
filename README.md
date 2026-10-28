@@ -40,11 +40,11 @@ npm run build
 
 ## Add or replace the CV
 
-No current PDF was found during setup, so the website shows an explicitly unavailable download button. To publish a reviewed CV:
+The website links to a public PDF converted from the owner's supplied Word CV. The public copy uses the approved Gmail address and omits phone numbers and the student-number-based email; the original Word document is preserved outside this repository. To replace the public CV:
 
 1. Review its currency and remove phone numbers, student IDs, private addresses, and confidential research details. Check PDF metadata too.
 2. Save it as `assets/Hanlin_Zhao_CV.pdf`.
-3. Replace the disabled button in `#cv` with `<a class="cv-button" href="assets/Hanlin_Zhao_CV.pdf" download>Download CV (PDF)</a>` and update the adjacent status text.
+3. Keep the existing download link in `#cv` and update the adjacent description if the contents change.
 4. Keep the filename for future replacements, check the download, then commit and push.
 
 The owner-provided contact email is `zhl2104405665@gmail.com`, linked from the hero and contact section alongside GitHub and LinkedIn. To change it, update both `mailto:` destinations and the visible address in `index.html`.

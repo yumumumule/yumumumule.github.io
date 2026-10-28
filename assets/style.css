@@ -601,9 +601,11 @@ h1 {
   font: 13px var(--sans);
   color: #63665b;
   text-align: left;
+  text-decoration: none;
+  display: inline-block;
   flex: none;
 }
-.cv-unavailable {
+.cv-detail {
   display: block;
   font-family: var(--mono);
   font-size: 9px;
