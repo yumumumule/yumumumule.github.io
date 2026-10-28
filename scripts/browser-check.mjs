@@ -51,6 +51,7 @@ try {
       const top = await page.locator(`#${id}`).evaluate(element=>element.getBoundingClientRect().top);
       const headerHeight = await page.locator('header').evaluate(element=>element.getBoundingClientRect().height);
       assert.ok(top>=headerHeight-2,`${name}: ${id} obscured by sticky header (${top},${headerHeight})`);
+      assert.equal(await page.locator('nav a[aria-current="location"]').getAttribute('href'), `#${id}`, `${name}: navigation highlight`);
     }
     await page.emulateMedia({reducedMotion:'reduce'});
     assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');
