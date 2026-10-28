@@ -47,7 +47,14 @@ if (remoteResult.status===0) {
 console.log(git(['push','-u','origin','main']));
 const pages = await api(`${repoPath}/pages`);
 const configuration = {build_type:'legacy',source:{branch:'main',path:'/'}};
-const configured = await api(`${repoPath}/pages`,pages.status===404?'POST':'PUT',configuration);
+let configured = await api(`${repoPath}/pages`,pages.status===404?'POST':'PUT',configuration);
+// A username.github.io repository can be enabled automatically after its first push.
+// If creation races with that setup, inspect and reconcile the actual configuration.
+if (configured.status === 409) {
+  const current = await api(`${repoPath}/pages`);
+  if (current.ok && current.data.source?.branch === 'main' && current.data.source?.path === '/' && current.data.build_type === 'legacy') configured = current;
+  else if (current.ok) configured = await api(`${repoPath}/pages`,'PUT',configuration);
+}
 if (!configured.ok) throw new Error(`Pages setup failed (${configured.status}): ${configured.data?.message}`);
 console.log(`Pages configured for main / at https://${name}/`);
 const build = await api(`${repoPath}/pages/builds`,'POST');
