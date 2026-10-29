@@ -51,6 +51,8 @@ Curated CV content is in `content/cv.json`. With Python, `python-docx`, `pypdf`,
 
 The owner-provided contact email is `zhl2104405665@gmail.com`, linked from the hero and contact section alongside GitHub and LinkedIn. To change it, update both `mailto:` destinations and the visible address in `index.html`.
 
+Google Scholar (`user=Zq8atRMAAAAJ`) is linked from the hero and contact section. Update both URLs in `index.html` when changing the profile. Profile metrics are not fetched or displayed.
+
 ## GitHub Pages deployment
 
 The public repository `yumumumule/yumumumule.github.io` uses GitHub Pages **Deploy from a branch → main → / (root)**. `.nojekyll` disables Jekyll processing. Each push to `main` triggers GitHub's native Pages build; no custom workflow is necessary.
